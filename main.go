@@ -3,18 +3,23 @@ package main
 import (
 	"fmt"
 	"os/exec"
-	"log"
 )
 
-func main() {
-	cmd := exec.Command("cd ..")
-	log.Printf("Running command and waiting for it to finish...")
-	err := cmd.Run()
-	log.Printf("Command finished with error: %v", err)
+//"sw_vers -productVersion" for current macOS   python3 --version for current python3version
 
-	out, err := exec.Command("cd ..").Output()
+func main() {
+	path, err := exec.LookPath("Python")
+	errorCatch(err)
+	//osVer, err := exec.Command("sw_vers -productVersion").Output()
+	pyVer, err1 := exec.Command("/usr/bin/Python python3 --version", path).Output()
+	errorCatch(err1)
+	fmt.Printf("%s", pyVer)//"python3 version: %s\n", out)
+	
+}
+
+
+func errorCatch(err error) {
 	if err != nil {
 		panic(err)
 	}
-	fmt.Printf("%s", out)//"python3 version: %s\n", out)
 }
