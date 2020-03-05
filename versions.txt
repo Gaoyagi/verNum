@@ -1,0 +1,11 @@
+Python:
+where python3: /usr/local/bin/python3
+which python3: /usr/local/bin/python3
+python3 --version: Python 3.7.4
+
+
+Go:
+where go: /usr/local/bin/go
+go version: go version go1.13.6 darwin/amd64
+
+
