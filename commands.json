@@ -1,5 +1,11 @@
 [
     {
+        "executable": "Mac OS",
+        "commands": [
+           "sw_vers  -productVersion"
+        ]
+    },
+    {
         "executable": "Python",
         "commands": [
             "where python3",
