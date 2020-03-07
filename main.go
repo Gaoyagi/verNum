@@ -82,31 +82,4 @@ func deleteFile() {
     errorCatch(err)
 }
 
-	// //python information
-	// pyVer, err := exec.Command("python3", "--version").Output()	//python version #
-	// errorCatch(err)
-	// pyPath, err := exec.LookPath("python3")						//python location
-	// errorCatch(err)
-
-	// //golang information
-	// goVer, err := exec.Command("go", "version").Output()		//golang version number
-	// errorCatch(err)
-	// goPath, err := exec.LookPath("go")							//golang location
-	// errorCatch(err)
-	// fmt.Printf("%s", string(goPath)) 
-
-	// //grab mac OS version number
-	// osVer, err := exec.Command("sw_vers",  "-productVersion").Output()
-	// errorCatch(err)
-
-	// //grab mongoDB versions number
-	// mongodVer, err := exec.Command("mongod",  "--version").Output()x
-	// errorCatch(err)
-
-
-	// //prints out the desired version numbers
-	// fmt.Printf("Python3 current version: %s", string(pyVer)) 
-	// fmt.Printf("Mac OS current version: %s", string(osVer))
-	// fmt.Printf("MongoDB current version: %s", string(mongodVer))
-	// fmt.Printf("Golang current version: %s", string(goVer))
-
+	
